@@ -236,16 +236,6 @@ def checkout():
 
 
 
-
-
-
-
-
-
-
-
-
-
 def get_categories():
     with sqlite3.connect('store.db') as conn:
         cursor = conn.cursor()
