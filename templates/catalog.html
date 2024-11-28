@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>каталог</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+<body class="body"> 
+    <a href="{{ url_for('index') }}"><h1 class="line-title">COSMY</h1></a>
+    <header class="header">
+        <nav class="nav">
+            <a href="{{ url_for('catalog') }}" class="nav-button">каталог</a>
+            <a href="{{ url_for('brand') }}" class="nav-button">бренди</a>
+            <a href="{{ url_for('blog') }}" class="nav-button">про нас</a>
+            <a href="{{ url_for('cart') }}" class="nav-button">мій кошик</a>
+        </nav>
+        <div class="full-width-line"></div>
+    </header>
+    <header>
+        
+    </header>
+    <main>
+      <a href="{{ url_for('index') }}"><p class="in-index">На головну</p></a>
+        <div class="catalog">
+            <div class="catalog-ul">
+            <ul class="text-cosmi">
+                <h3>Каталог</h3><br>
+                {% for category in categories %}
+                <ul>
+                    <a href="{{ url_for('category_products', category_id=category['id']) }}">
+                        {{ category['name'] }}
+                    </a>
+                </ul>
+            {% endfor %}
+            </ul>
+        </div>
+
+        <div class="tovar">
+                {% for product in products %}
+                <div class="product">
+                        <h4>{{ product['name'] }}</h4>
+                        <p>{{ product['description'] }}</p>
+                        <p >Ціна: {{ product['price'] }} грн</p>
+                        <img src="{{ url_for('static', filename='images/' + product['image']) }}" alt="{{ product['name'] }}" width="200">
+                        <button class="add-to-cart-button"><a href="{{ url_for('add_to_cart', product_id=product['id']) }}">Додати в кошик</a></button>
+                </div>
+                {% endfor %}
+        </div>
+        </div>
+    </main>
+    <script src="static/script.js"></script>
+</body>
+</html>

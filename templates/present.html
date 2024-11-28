@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>подарунок до замовлення</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+    <body class="body"> 
+        <a href="{{ url_for('index') }}"></a><h1 class="line-title">COSMY</h1></a>
+        <header class="header">
+            <nav class="nav">
+            <a href="{{ url_for('catalog') }}" class="nav-button">каталог</a>
+            <a href="{{ url_for('brand') }}" class="nav-button">бренди</a>
+            <a href="{{ url_for('blog') }}" class="nav-button">про нас</a>
+            <a href="{{ url_for('cart') }}" class="nav-button">мій кошик</a>
+            </nav>
+            <div class="full-width-line"></div>
+        </header>
+    <header>
+        <h1>Це нова сторінка</h1>
+    </header>
+    <main>
+        <p>Вміст нової сторінки.</p>
+        <a href="{{ url_for('index') }}">Повернутися на головну сторінку</a> <!-- Посилання назад -->
+    </main>
+    <footer>
+        <div class="footer">
+           <div class="footer-text"> 
+                <ul class="footer-ul">
+                <li><a href="#"><img src="static/images/лаб3(3).png" class="footer-img" target="_blank"></a></li>
+                <li><a href="https://www.instagram.com/cosmy/" class="text-inst" target="_blank"><h2 class="text-inst">Підписатися</h2></a></li>
+                <li><a href="https://www.instagram.com/cosmy/" target="_blank"><p class="text-inst">@cosmy в instagram</p></a></li>
+            </div>
+        </ul>
+     <div class="carousel">
+        <div class="carousel-track">
+            <a href=""></a><img src="static/images/post7.jpeg" class="carousel-image" alt="Image 7"></a>
+            <a href=""></a><img src="static/images/post8.jpeg" class="carousel-image" alt="Image 8"></a>
+            <a href=""></a><img src="static/images/post9.jpeg" class="carousel-image" alt="Image 9"></a>
+            <a href=""></a><img src="static/images/post10.jpeg" class="carousel-image" alt="Image 10"></a>
+            <a href=""></a><img src="static/images/post11.jpeg" class="carousel-image" alt="Image 11"></a>
+            <a href=""></a><img src="static/images/post12.jpeg" class="carousel-image" alt="Image 12"></a>
+            <a href=""></a><img src="static/images/post13.jpeg" class="carousel-image" alt="Image 13"></a>
+            <a href=""></a><img src="static/images/post14.jpeg" class="carousel-image" alt="Image 14"></a>
+        </div>
+    </div>
+    </div>
+    </footer>
+    <script src="static/script.js"></script>
+</body>
+</html>

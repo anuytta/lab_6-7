@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>бренди</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+<body class="body"> 
+    <a href="{{ url_for('index') }}"><h1 class="line-title">COSMY</h1></a>
+    <header class="header">
+        <nav class="nav">
+            <a href="{{ url_for('catalog') }}" class="nav-button">каталог</a>
+            <a href="{{ url_for('brand') }}" class="nav-button">бренди</a>
+            <a href="{{ url_for('blog') }}" class="nav-button">про нас</a>
+            <a href="{{ url_for('cart') }}" class="nav-button">мій кошик</a>
+        </nav>
+        <div class="full-width-line"></div>
+    </header>
+    <main>
+        <a href="{{ url_for('index') }}"><p class="in-index">На головну</p></a>
+        <div class="catalog">
+            <table class="table">
+                <tr>
+                    <td><img src="static/images/elemis2.jpeg" alt="" class="size-img"></td>
+                    <td>
+                        <h4>ELEMIS —Британський № 1 luxury бренд догляду за шкірою.</h4>
+                        <br>
+                        <p>Ваша шкіра, ваше тіло і ваше благополуччя лежить в серці ELEMIS.
+                            Кожна інноваційна формула — це поєднання досягнень науки, хімії та природи, ретельно розроблене командою вчених, відданих своїй справі, а також експертів.</p>
+                            <br>
+                            <p>ELEMIS використовує найпотужніші біологічно активні інгредієнти, знайдені як на поверхні, так і в глибинах нашої землі, приділяючи пильну увагу деталям. Новаторські формули і  результати — ось що дійсно є відмінною рисою ELEMIS і змінює Ваше уявлення про догляд за шкірою. </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="static/images/holy-land.jpeg" alt="" class="size-img"></td>
+                    <td><h4>HOLY LAND </h4>
+                        <br>
+                    <p>— це бренд, який поєднує в собі наукові досягнення та природні інгредієнти для створення високоефективної косметики. Інноваційні формули, індивідуальний підхід до кожного клієнта та висока безпека продукції роблять цього виробника одним з провідних у галузі професійного догляду для вашої шкіри. </p></td>
+                </tr>
+                <tr>
+                    <td><img src="static/images/mary-fresh.jpeg" alt="" class="size-img"></td>
+
+                    <td><h4>MARIE FRESH COSMETICS</h4>
+                    <br>
+                    <p> - це натуральна ефективна косметика для догляду за обличчям, тілом і волоссям з високою концентрацією активних компонентів. Косметика створена лікарем-косметологом на основі власного практичного досвіду роботи з клієнтами та знанні їхніх потреб. Інгредієнти виробляються в країнах Європи (Швейцарія, Франція, Італія, Німеччина та інші) і мають європейські сертифікати Ecocert і Cosmos.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="static/images/dr-ceuracle.jpeg" alt="" class="size-img"></td>
+                    <td>
+                        <h4>Dr.CEURACLE - корейська косметика для здоров'я вашої шкіри</h4>
+                        <br>
+                        <p>Dr.Ceuracle - це корейський бренд косметики, який спеціалізується на розробці та виробництві натуральних і ефективних продуктів для догляду за шкірою. Продукти Dr.Ceuracle (Доктор С'юрикл) виготовляються з високоякісних інгредієнтів, таких як рослинні екстракти, вітаміни та мінерали.</p>
+                        <br>
+                        <p>Косметика Dr.Ceuracle розроблена для різних типів шкіри і допомагає вирішувати широкий спектр проблем, таких як сухість, жирність, вугровий висип, зморшки та пігментація.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="static/images/dushka.jpeg" alt="" class="size-img"></td>
+                    <td><h4>DUSHKA</h4>
+                        <br>
+                    <p>- український бренд натуральної косметики, створений у 2014 році в Одесі. На нашому сайті ви знайдете біля 400 продуктів для догляду за тілом, волоссям і обличчям для жінок і чоловіків. </p>
+                <br>
+                <p>Доглядова косметика, яку можна купити на нашому сайті, на 95% складається з натуральних інгредієнтів. Є засоби, натуральні на 100%.</p>
+            </td>
+            </tr>
+                <tr>
+                    <td><img src="static/images/medic8.jpeg" alt="" class="size-img"></td>
+                    <td><h4>MEDIC8 </h4><br>
+                    <p>- британський виробник професійної косметики для догляду за шкірою. Бренд використовує власні запатентовані технології та інновації, підтверджені клінічними дослідженнями.</p><br>
+                <p>Щоденний догляд за шкірою medik 8 допомагає зберегти її природне сяйво та здоровий стан. Космецевтика також допомагає запобігти появі висипань, розгладити зморшки та зберегти шкіру в найкращому вигляді. Незалежно від типу вашої шкіри, щоденний догляд за нею допоможе вам підтримувати її здоров'я в цілому та розв'язувати конкретні проблеми, такі як акне та темні плями.</p>
+            </td></tr>
+            </table>
+            
+        
+        </div>
+    </main>
+    <footer>
+        <div class="footer">
+           <div class="footer-text"> 
+                <ul class="footer-ul">
+                <li><a href="#"><img src="static/images/лаб3(3).png" class="footer-img" target="_blank"></a></li>
+                <li><a href="https://www.instagram.com/cosmy/" class="text-inst" target="_blank"><h2 class="text-inst">Підписатися</h2></a></li>
+                <li><a href="https://www.instagram.com/cosmy/" target="_blank"><p class="text-inst">@cosmy в instagram</p></a></li>
+            </div>
+        </ul>
+     <div class="carousel">
+        <div class="carousel-track">
+            <a href=""></a><img src="static/images/post7.jpeg" class="carousel-image" alt="Image 7"></a>
+            <a href=""></a><img src="static/images/post8.jpeg" class="carousel-image" alt="Image 8"></a>
+            <a href=""></a><img src="static/images/post9.jpeg" class="carousel-image" alt="Image 9"></a>
+            <a href=""></a><img src="static/images/post10.jpeg" class="carousel-image" alt="Image 10"></a>
+            <a href=""></a><img src="static/images/post11.jpeg" class="carousel-image" alt="Image 11"></a>
+            <a href=""></a><img src="static/images/post12.jpeg" class="carousel-image" alt="Image 12"></a>
+            <a href=""></a><img src="static/images/post13.jpeg" class="carousel-image" alt="Image 13"></a>
+            <a href=""></a><img src="static/images/post14.jpeg" class="carousel-image" alt="Image 14"></a>
+        </div>
+    </div>
+    </div>
+       </footer>
+       <script src="static/script.js"></script>
+
+</body>
+</html>

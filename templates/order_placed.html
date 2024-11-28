@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosmi</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+</head>  
+<body class="body"> 
+    <a href="{{ url_for('index') }}"><p class="line-title">COSMY</p></a>
+    <header class="header">
+        <nav class="nav">
+            <a href="{{ url_for('catalog') }}" class="nav-button">каталог</a>
+            <a href="{{ url_for('brand') }}" class="nav-button">бренди</a>
+            <a href="{{ url_for('blog') }}" class="nav-button">про нас</a>
+            <a href="{{ url_for('cart') }}" class="nav-button">мій кошик</a>
+        </nav>
+        <div class="full-width-line"></div>
+    </header>
+    <title>Замовлення оформлено</title>
+</head>
+<body>
+    <div class="order-placed">
+        <h1 class="order-placed-h1">Дякуємо за ваше замовлення!</h1>
+        <p class="order-placed-p">Ваше замовлення успішно оформлено. Ми зв'яжемося з вами найближчим часом.</p>
+        <a href="{{ url_for('catalog') }}"> <p class="order-placed-p1">Повернутися до каталогу</p></a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>каталог</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+<body class="body"> 
+    <a href="{{ url_for('index') }}"><h1 class="line-title">COSMY</h1></a>
+    <header class="header">
+        <nav class="nav">
+            <a href="{{ url_for('catalog') }}" class="nav-button">каталог</a>
+            <a href="{{ url_for('brand') }}" class="nav-button">бренди</a>
+            <a href="{{ url_for('blog') }}" class="nav-button">про нас</a>
+            <a href="{{ url_for('cart') }}" class="nav-button">мій кошик</a>
+        </nav>
+        <div class="full-width-line"></div>
+    </header>
+    <header>
+        
+    </header>
+    <main>
+    
+    <form id="order-form" class="order-form">
+        <h2 class="reg-text">Оформлення замовлення</h2>
+        <input type="text" name="name" id="name" placeholder="Ім'я" required>
+        <input type="email" name="email" id="email" placeholder="Email" required>
+        <input type="text" name="address" id="address" placeholder="Адреса" required>
+        <button type="submit">Оформити замовлення</button>
+    </form>
+    
+    <!-- Блок для відображення повідомлення -->
+    <div id="response-message" style="display: none;">
+
+    </div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="static/script.js"></script>
+
+</main>
+</body>
+</html>
